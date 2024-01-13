@@ -1,0 +1,22 @@
+{
+  "name": "my-mongodb-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@loopback/core": "^5.1.5",
+    "@loopback/repository": "^6.1.5",
+    "loopback-connector-mongodb": "^7.0.0-alpha.1",
+    "mongodb": "^6.3.0",
+    "typescript": "^5.3.3"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.0"
+  }
+}
