@@ -10,13 +10,12 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@loopback/core": "^5.1.5",
-    "@loopback/repository": "^6.1.5",
-    "loopback-connector-mongodb": "^7.0.0-alpha.1",
-    "mongodb": "^6.3.0",
-    "typescript": "^5.3.3"
+    "@loopback/core": "^3.1.2",
+    "@loopback/repository": "^4.1.2",
+    "loopback-connector-mongodb": "^5.6.0",
+    "typescript": "^5.2.2"
   },
   "devDependencies": {
-    "@types/node": "^20.11.0"
+    "@types/node": "^14.18.26"
   }
 }

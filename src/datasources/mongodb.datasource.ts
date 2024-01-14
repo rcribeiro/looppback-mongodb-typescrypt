@@ -30,16 +30,16 @@ const config: MongoConfigInterface = {
 
 if (config.ssl) {
   const caFilePath = process.env.MONGODB_SSL_CA_PATH ?? '';
-  config.sslCA = caFilePath;
-//   if (caFilePath) {
-//     try {
-//       const caFileContent = fs.readFileSync(caFilePath, 'utf8');
-//       config.sslCA = caFileContent;
-//       debug('SSL CA file loaded:', caFilePath);
-//     } catch (e) {
-//       debug('Error reading SSL CA file:', e);
-//     }
-//   }
+//  config.sslCA = caFilePath;
+   if (caFilePath) {
+     try {
+       const caFileContent = fs.readFileSync(caFilePath, 'utf8');
+       config.sslCA = caFileContent;
+       debug('SSL CA file loaded:', caFilePath);
+     } catch (e) {
+       debug('Error reading SSL CA file:', e);
+     }
+   }
 }
 
 @lifeCycleObserver('datasource')
